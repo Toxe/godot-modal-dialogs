@@ -44,6 +44,15 @@ func build_magic_cure_pick_character_menu(menu: Menu) -> void:
 
 func build_item_menu(menu: Menu) -> void:
     menu.add_action("Potion", func() -> void: show_notification("use potion"))
+    menu.add_action("Ether", func() -> void: show_notification("use ether"))
+    menu.add_menu("Phoenix Down", build_item_phoenix_down_menu)
+
+
+func build_item_phoenix_down_menu(menu: Menu) -> void:
+    menu.add_action("Friend 1", func() -> void: show_notification("phoenix down friend 1"))
+    menu.add_action("Friend 2", func() -> void: show_notification("phoenix down friend 2"))
+    menu.add_action("Friend 3", func() -> void: show_notification("phoenix down friend 3"))
+    menu.add_action("Friend 4", func() -> void: show_notification("phoenix down friend 4"))
 
 
 func show_notification(text: String) -> void:
