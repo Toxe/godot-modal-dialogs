@@ -1,8 +1,8 @@
-class_name Dialog extends PanelContainer
+class_name Dialog extends MarginContainer
 
 
 func add_content(control: Control) -> void:
-    $MarginContainer.add_child(control)
+    add_child(control)
 
 
 func close() -> void:

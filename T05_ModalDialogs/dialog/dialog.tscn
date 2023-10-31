@@ -3,11 +3,8 @@
 [ext_resource type="Theme" uid="uid://biy1jtch5ko3f" path="res://theme.tres" id="1_u8b5c"]
 [ext_resource type="Script" path="res://dialog/dialog.gd" id="2_gn2io"]
 
-[node name="Dialog" type="PanelContainer"]
+[node name="Dialog" type="MarginContainer"]
 offset_right = 40.0
 offset_bottom = 40.0
 theme = ExtResource("1_u8b5c")
 script = ExtResource("2_gn2io")
-
-[node name="MarginContainer" type="MarginContainer" parent="."]
-layout_mode = 2
