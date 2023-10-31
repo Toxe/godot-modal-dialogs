@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://bf0d6qcy1tkm1"]
+
+[ext_resource type="Script" path="res://notification.gd" id="1_yyqnp"]
+[ext_resource type="Theme" uid="uid://biy1jtch5ko3f" path="res://theme.tres" id="2_xekr1"]
+
+[node name="Notification" type="CanvasLayer"]
+script = ExtResource("1_yyqnp")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+custom_minimum_size = Vector2(800, 80)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -400.0
+offset_top = -40.0
+offset_right = 400.0
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_xekr1")
+
+[node name="Label" type="Label" parent="PanelContainer"]
+layout_mode = 2
+text = "notification text"
+horizontal_alignment = 1
+vertical_alignment = 1
