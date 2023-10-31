@@ -14,32 +14,35 @@ func setup(build_menu_command: Callable) -> void:
 func close_dialog(dialog: Dialog) -> void:
     dialog.close()
 
-    var parent_menu := get_parent() as Menu
+    var parent_menu := get_menu()
     if parent_menu:
         parent_menu.enable_mouse_input()
         parent_menu.close.emit()
 
 
+func get_menu() -> Menu:
+    return get_parent().get_parent().get_parent().get_parent() as Menu
+
+
 func _on_pressed() -> void:
-    var parent_menu := get_parent() as Menu
-    var parent_dialog := parent_menu.get_parent() as Dialog
-
-    var pos := Vector2(30, 0)
-
-    if parent_dialog:
-        pos += parent_dialog.global_position + Vector2(parent_dialog.size.x, 0)
-    else:
-        pos += parent_menu.global_position + Vector2(parent_menu.size.x, 0)
-
-    # create dialog
-    var dialog := dialog_scene.instantiate() as Dialog
-    dialog.global_position = pos
-    get_viewport().add_child(dialog)
-
     # create menu
     var menu := menu_scene.instantiate() as Menu
     build_menu.call(menu)
-    dialog.add_content(menu)
 
-    parent_menu.disable_mouse_input()
+    # create dialog
+    var pos := global_position + Vector2(size.x + 20, -30)
+    var dialog := dialog_scene.instantiate() as Dialog
+    dialog.global_position = pos
+
+    dialog.add_content(menu)
+    get_viewport().add_child(dialog)
+
+    # move dialog up if it clips out of the viewport
+    var viewport_height: float = ProjectSettings.get("display/window/size/viewport_height")
+    var dialog_y_pos := (dialog.global_position + dialog.size).y
+
+    if dialog_y_pos > viewport_height:
+        dialog.global_position.y -= dialog_y_pos - viewport_height
+
+    get_menu().disable_mouse_input()
     menu.close.connect(func() -> void: close_dialog(dialog))

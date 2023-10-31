@@ -1,7 +1,8 @@
-[gd_scene load_steps=12 format=3 uid="uid://cwc2cuyvyp0lc"]
+[gd_scene load_steps=13 format=3 uid="uid://cwc2cuyvyp0lc"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_axe23"]
 [ext_resource type="PackedScene" uid="uid://jks85lh402mp" path="res://menu/menu.tscn" id="2_qe8vp"]
+[ext_resource type="Theme" uid="uid://biy1jtch5ko3f" path="res://theme.tres" id="3_3g1iq"]
 [ext_resource type="Texture2D" uid="uid://b1ygadlpkhabj" path="res://icon.svg" id="3_f2ea1"]
 
 [sub_resource type="Gradient" id="Gradient_8nihk"]
@@ -23,7 +24,7 @@ fill_from = Vector2(0.5, 0.5)
 fill_to = Vector2(0.5, 0)
 
 [sub_resource type="Gradient" id="Gradient_e705x"]
-colors = PackedColorArray(8.95232e-06, 0.831235, 3.85046e-07, 1, 2.02149e-06, 0.618463, 4.42803e-06, 1)
+colors = PackedColorArray(0, 1, 0, 1, 0, 0.494118, 0, 1)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_asvv3"]
 gradient = SubResource("Gradient_e705x")
@@ -217,6 +218,7 @@ offset_bottom = 447.0
 color = Color(0, 1, 0, 1)
 
 [node name="UI" type="ColorRect" parent="Background"]
+visible = false
 offset_top = 447.0
 offset_right = 1024.0
 offset_bottom = 768.0
@@ -289,8 +291,23 @@ grow_vertical = 0
 texture = SubResource("GradientTexture2D_g88vo")
 expand_mode = 1
 
-[node name="MainActionMenu" parent="." instance=ExtResource("2_qe8vp")]
-offset_left = 44.0
-offset_top = 505.0
-offset_right = 44.0
-offset_bottom = 505.0
+[node name="HSplitContainer" type="HSplitContainer" parent="."]
+offset_top = 447.0
+offset_right = 1024.0
+offset_bottom = 768.0
+theme = ExtResource("3_3g1iq")
+split_offset = 300
+dragger_visibility = 1
+
+[node name="MainActionMenu" parent="HSplitContainer" instance=ExtResource("2_qe8vp")]
+layout_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="HSplitContainer"]
+layout_mode = 2
+theme_type_variation = &"BorderPanelContainer"
+
+[node name="PanelContainer" type="PanelContainer" parent="HSplitContainer/PanelContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="HSplitContainer/PanelContainer/PanelContainer"]
+layout_mode = 2

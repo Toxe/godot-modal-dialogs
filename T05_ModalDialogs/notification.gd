@@ -10,4 +10,4 @@ func _ready() -> void:
 
 
 func set_text(text: String) -> void:
-    $PanelContainer/Label.text = text
+    %Label.text = text

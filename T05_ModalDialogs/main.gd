@@ -2,7 +2,7 @@ extends Node2D
 
 const notification_scene = preload("res://notification.tscn")
 
-@onready var main_action_menu: Menu = $MainActionMenu
+@onready var main_action_menu: Menu = $HSplitContainer/MainActionMenu
 
 
 func _ready() -> void:

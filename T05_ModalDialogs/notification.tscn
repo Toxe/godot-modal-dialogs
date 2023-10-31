@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bf0d6qcy1tkm1"]
 
 [ext_resource type="Script" path="res://notification.gd" id="1_yyqnp"]
-[ext_resource type="Theme" uid="uid://biy1jtch5ko3f" path="res://theme.tres" id="2_xekr1"]
+[ext_resource type="Theme" uid="uid://biy1jtch5ko3f" path="res://theme.tres" id="2_k36uu"]
 
 [node name="Notification" type="CanvasLayer"]
 script = ExtResource("1_yyqnp")
@@ -19,10 +19,15 @@ offset_right = 400.0
 offset_bottom = 40.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("2_xekr1")
+theme = ExtResource("2_k36uu")
+theme_type_variation = &"BorderPanelContainer"
 
-[node name="Label" type="Label" parent="PanelContainer"]
+[node name="PanelContainer" type="PanelContainer" parent="PanelContainer"]
 layout_mode = 2
-text = "notification text"
+
+[node name="Label" type="Label" parent="PanelContainer/PanelContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "text"
 horizontal_alignment = 1
 vertical_alignment = 1

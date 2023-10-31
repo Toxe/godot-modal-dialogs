@@ -1,4 +1,4 @@
-class_name Menu extends VBoxContainer
+class_name Menu extends PanelContainer
 
 signal close
 
@@ -16,13 +16,14 @@ func add_menu(text: String, build_sub_menu: Callable) -> void:
 
 func add_button(button: Button, text: String) -> Button:
     button.text = text
-    add_child(button)
+    button.size_flags_horizontal = Control.SIZE_SHRINK_BEGIN
+    %VBoxContainer.add_child(button)
     return button
 
 
 func get_controls() -> Array[Control]:
     var controls: Array[Control] = []
-    for child in get_children():
+    for child in %VBoxContainer.get_children():
         var ctrl := child as Control
         if ctrl:
             controls.append(ctrl)
