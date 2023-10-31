@@ -1,0 +1,296 @@
+[gd_scene load_steps=12 format=3 uid="uid://cwc2cuyvyp0lc"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_axe23"]
+[ext_resource type="PackedScene" uid="uid://jks85lh402mp" path="res://menu/menu.tscn" id="2_qe8vp"]
+[ext_resource type="Texture2D" uid="uid://b1ygadlpkhabj" path="res://icon.svg" id="3_f2ea1"]
+
+[sub_resource type="Gradient" id="Gradient_8nihk"]
+colors = PackedColorArray(0.00492994, 0.228797, 1, 1, 0.51363, 0.670995, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_0otgd"]
+gradient = SubResource("Gradient_8nihk")
+fill_from = Vector2(0, 1)
+fill_to = Vector2(0, 0)
+
+[sub_resource type="Gradient" id="Gradient_y8ke6"]
+offsets = PackedFloat32Array(0.695055, 1)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_uvdbk"]
+gradient = SubResource("Gradient_y8ke6")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0.5, 0)
+
+[sub_resource type="Gradient" id="Gradient_e705x"]
+colors = PackedColorArray(8.95232e-06, 0.831235, 3.85046e-07, 1, 2.02149e-06, 0.618463, 4.42803e-06, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_asvv3"]
+gradient = SubResource("Gradient_e705x")
+fill_from = Vector2(0, 1)
+fill_to = Vector2(0, 0)
+
+[sub_resource type="Gradient" id="Gradient_oap0w"]
+offsets = PackedFloat32Array(0, 0.326923, 1)
+colors = PackedColorArray(0, 0, 0, 0.862745, 0, 0, 0, 0.862745, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_g88vo"]
+gradient = SubResource("Gradient_oap0w")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0.5, 0)
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_axe23")
+
+[node name="Background" type="Node2D" parent="."]
+
+[node name="Sky" type="TextureRect" parent="Background"]
+offset_right = 1024.0
+offset_bottom = 279.0
+texture = SubResource("GradientTexture2D_0otgd")
+
+[node name="Cloud1" type="TextureRect" parent="Background/Sky"]
+layout_mode = 0
+offset_left = -32.0
+offset_top = -11.0
+offset_right = 103.0
+offset_bottom = 53.0
+texture = SubResource("GradientTexture2D_uvdbk")
+expand_mode = 1
+
+[node name="Cloud5" type="TextureRect" parent="Background/Sky"]
+layout_mode = 0
+offset_left = 328.0
+offset_top = 5.0
+offset_right = 463.0
+offset_bottom = 69.0
+texture = SubResource("GradientTexture2D_uvdbk")
+expand_mode = 1
+
+[node name="Cloud6" type="TextureRect" parent="Background/Sky"]
+layout_mode = 0
+offset_left = 399.0
+offset_top = -7.0
+offset_right = 534.0
+offset_bottom = 57.0
+texture = SubResource("GradientTexture2D_uvdbk")
+expand_mode = 1
+
+[node name="Cloud7" type="TextureRect" parent="Background/Sky"]
+layout_mode = 0
+offset_left = 397.0
+offset_top = 26.0
+offset_right = 532.0
+offset_bottom = 90.0
+texture = SubResource("GradientTexture2D_uvdbk")
+expand_mode = 1
+
+[node name="Cloud8" type="TextureRect" parent="Background/Sky"]
+layout_mode = 0
+offset_left = 469.0
+offset_top = 8.0
+offset_right = 604.0
+offset_bottom = 72.0
+texture = SubResource("GradientTexture2D_uvdbk")
+expand_mode = 1
+
+[node name="Cloud16" type="TextureRect" parent="Background/Sky"]
+layout_mode = 0
+offset_left = 428.0
+offset_top = -25.0
+offset_right = 563.0
+offset_bottom = 39.0
+texture = SubResource("GradientTexture2D_uvdbk")
+expand_mode = 1
+
+[node name="Cloud9" type="TextureRect" parent="Background/Sky"]
+layout_mode = 0
+offset_left = 766.0
+offset_top = 105.0
+offset_right = 901.0
+offset_bottom = 169.0
+texture = SubResource("GradientTexture2D_uvdbk")
+expand_mode = 1
+
+[node name="Cloud10" type="TextureRect" parent="Background/Sky"]
+layout_mode = 0
+offset_left = 743.0
+offset_top = 120.0
+offset_right = 878.0
+offset_bottom = 184.0
+texture = SubResource("GradientTexture2D_uvdbk")
+expand_mode = 1
+
+[node name="Cloud11" type="TextureRect" parent="Background/Sky"]
+layout_mode = 0
+offset_left = 832.0
+offset_top = 93.0
+offset_right = 967.0
+offset_bottom = 157.0
+texture = SubResource("GradientTexture2D_uvdbk")
+expand_mode = 1
+
+[node name="Cloud12" type="TextureRect" parent="Background/Sky"]
+layout_mode = 0
+offset_left = 779.0
+offset_top = 80.0
+offset_right = 914.0
+offset_bottom = 144.0
+texture = SubResource("GradientTexture2D_uvdbk")
+expand_mode = 1
+
+[node name="Cloud13" type="TextureRect" parent="Background/Sky"]
+layout_mode = 0
+offset_left = 841.0
+offset_top = 58.0
+offset_right = 976.0
+offset_bottom = 122.0
+texture = SubResource("GradientTexture2D_uvdbk")
+expand_mode = 1
+
+[node name="Cloud14" type="TextureRect" parent="Background/Sky"]
+layout_mode = 0
+offset_left = 919.0
+offset_top = 78.0
+offset_right = 1054.0
+offset_bottom = 142.0
+texture = SubResource("GradientTexture2D_uvdbk")
+expand_mode = 1
+
+[node name="Cloud15" type="TextureRect" parent="Background/Sky"]
+layout_mode = 0
+offset_left = 887.0
+offset_top = 41.0
+offset_right = 1022.0
+offset_bottom = 105.0
+texture = SubResource("GradientTexture2D_uvdbk")
+expand_mode = 1
+
+[node name="Cloud2" type="TextureRect" parent="Background/Sky"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 15.0
+offset_right = 141.0
+offset_bottom = 79.0
+texture = SubResource("GradientTexture2D_uvdbk")
+expand_mode = 1
+
+[node name="Cloud3" type="TextureRect" parent="Background/Sky"]
+layout_mode = 0
+offset_left = 56.0
+offset_top = -11.0
+offset_right = 191.0
+offset_bottom = 53.0
+texture = SubResource("GradientTexture2D_uvdbk")
+expand_mode = 1
+
+[node name="Cloud4" type="TextureRect" parent="Background/Sky"]
+layout_mode = 0
+offset_left = 88.0
+offset_top = 10.0
+offset_right = 223.0
+offset_bottom = 74.0
+texture = SubResource("GradientTexture2D_uvdbk")
+expand_mode = 1
+
+[node name="Mountains" type="Node2D" parent="Background"]
+y_sort_enabled = true
+
+[node name="Polygon2D" type="Polygon2D" parent="Background/Mountains"]
+position = Vector2(92, 179)
+scale = Vector2(2, 1)
+color = Color(0.737255, 0.737255, 0.737255, 1)
+polygon = PackedVector2Array(0, 0, 50, 100, -50, 100)
+
+[node name="Ground" type="TextureRect" parent="Background"]
+offset_top = 279.0
+offset_right = 1024.0
+offset_bottom = 447.0
+texture = SubResource("GradientTexture2D_asvv3")
+
+[node name="Ground2" type="ColorRect" parent="Background"]
+visible = false
+offset_top = 279.0
+offset_right = 1024.0
+offset_bottom = 447.0
+color = Color(0, 1, 0, 1)
+
+[node name="UI" type="ColorRect" parent="Background"]
+offset_top = 447.0
+offset_right = 1024.0
+offset_bottom = 768.0
+color = Color(0.00784314, 0, 0.992157, 1)
+
+[node name="Enemies" type="Node2D" parent="."]
+
+[node name="Enemy1" type="Sprite2D" parent="Enemies"]
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(249, 270)
+texture = ExtResource("3_f2ea1")
+
+[node name="TextureRect" type="TextureRect" parent="Enemies/Enemy1"]
+show_behind_parent = true
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -136.5
+offset_top = -77.0
+offset_right = 8.5
+offset_bottom = -51.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = SubResource("GradientTexture2D_g88vo")
+expand_mode = 1
+
+[node name="Enemy2" type="Sprite2D" parent="Enemies"]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(492, 291)
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("3_f2ea1")
+
+[node name="TextureRect" type="TextureRect" parent="Enemies/Enemy2"]
+show_behind_parent = true
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -136.5
+offset_top = -76.7692
+offset_right = 8.50003
+offset_bottom = -50.7692
+grow_horizontal = 2
+grow_vertical = 0
+texture = SubResource("GradientTexture2D_g88vo")
+expand_mode = 1
+
+[node name="Enemy3" type="Sprite2D" parent="Enemies"]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(751, 276)
+scale = Vector2(1.15, 1.15)
+texture = ExtResource("3_f2ea1")
+
+[node name="TextureRect" type="TextureRect" parent="Enemies/Enemy3"]
+show_behind_parent = true
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -136.5
+offset_top = -76.8696
+offset_right = 8.5
+offset_bottom = -50.8696
+grow_horizontal = 2
+grow_vertical = 0
+texture = SubResource("GradientTexture2D_g88vo")
+expand_mode = 1
+
+[node name="MainActionMenu" parent="." instance=ExtResource("2_qe8vp")]
+offset_left = 44.0
+offset_top = 505.0
+offset_right = 44.0
+offset_bottom = 505.0
