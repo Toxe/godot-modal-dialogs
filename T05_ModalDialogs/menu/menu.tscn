@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://jks85lh402mp"]
+
+[ext_resource type="Theme" uid="uid://biy1jtch5ko3f" path="res://theme.tres" id="1_cye14"]
+[ext_resource type="Script" path="res://menu/menu.gd" id="1_f55qi"]
+
+[node name="Menu" type="VBoxContainer"]
+theme = ExtResource("1_cye14")
+script = ExtResource("1_f55qi")
