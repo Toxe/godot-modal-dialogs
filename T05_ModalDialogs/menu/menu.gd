@@ -1,12 +1,12 @@
 class_name Menu extends PanelContainer
 
-signal close
+signal request_close
 
 
 func add_action(text: String, action: Callable) -> void:
     var button := add_button(ActionButton.new(), text) as ActionButton
     button.setup(action)
-    button.pressed.connect(func() -> void: close.emit())
+    button.pressed.connect(func() -> void: request_close.emit())
 
 
 func add_menu(text: String, build_sub_menu: Callable) -> void:
