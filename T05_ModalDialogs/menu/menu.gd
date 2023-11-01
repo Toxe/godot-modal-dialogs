@@ -16,7 +16,7 @@ func add_menu(text: String, build_sub_menu: Callable) -> void:
 
 func add_button(button: Button, text: String) -> Button:
     button.text = text
-    button.size_flags_horizontal = Control.SIZE_SHRINK_BEGIN
+    button.alignment = HORIZONTAL_ALIGNMENT_LEFT
     %VBoxContainer.add_child(button)
     return button
 
