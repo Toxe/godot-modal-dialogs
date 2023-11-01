@@ -1,9 +1,9 @@
-[gd_scene load_steps=13 format=3 uid="uid://cwc2cuyvyp0lc"]
+[gd_scene load_steps=11 format=3 uid="uid://cwc2cuyvyp0lc"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_axe23"]
+[ext_resource type="PackedScene" uid="uid://ccfdtanlj6x3i" path="res://enemy/enemy.tscn" id="2_li0h4"]
 [ext_resource type="PackedScene" uid="uid://jks85lh402mp" path="res://menu/menu.tscn" id="2_qe8vp"]
 [ext_resource type="Theme" uid="uid://biy1jtch5ko3f" path="res://theme.tres" id="3_3g1iq"]
-[ext_resource type="Texture2D" uid="uid://b1ygadlpkhabj" path="res://icon.svg" id="3_f2ea1"]
 
 [sub_resource type="Gradient" id="Gradient_8nihk"]
 colors = PackedColorArray(0.00492994, 0.228797, 1, 1, 0.51363, 0.670995, 1, 1)
@@ -30,16 +30,6 @@ colors = PackedColorArray(0, 1, 0, 1, 0, 0.494118, 0, 1)
 gradient = SubResource("Gradient_e705x")
 fill_from = Vector2(0, 1)
 fill_to = Vector2(0, 0)
-
-[sub_resource type="Gradient" id="Gradient_oap0w"]
-offsets = PackedFloat32Array(0, 0.326923, 1)
-colors = PackedColorArray(0, 0, 0, 0.862745, 0, 0, 0, 0.862745, 0, 0, 0, 0)
-
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_g88vo"]
-gradient = SubResource("Gradient_oap0w")
-fill = 1
-fill_from = Vector2(0.5, 0.5)
-fill_to = Vector2(0.5, 0)
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_axe23")
@@ -226,70 +216,16 @@ color = Color(0.00784314, 0, 0.992157, 1)
 
 [node name="Enemies" type="Node2D" parent="."]
 
-[node name="Enemy1" type="Sprite2D" parent="Enemies"]
-self_modulate = Color(1, 0, 0, 1)
+[node name="Enemy1" parent="Enemies" instance=ExtResource("2_li0h4")]
 position = Vector2(249, 270)
-texture = ExtResource("3_f2ea1")
 
-[node name="TextureRect" type="TextureRect" parent="Enemies/Enemy1"]
-show_behind_parent = true
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -136.5
-offset_top = -77.0
-offset_right = 8.5
-offset_bottom = -51.0
-grow_horizontal = 2
-grow_vertical = 0
-texture = SubResource("GradientTexture2D_g88vo")
-expand_mode = 1
-
-[node name="Enemy2" type="Sprite2D" parent="Enemies"]
-modulate = Color(1, 0, 0, 1)
+[node name="Enemy2" parent="Enemies" instance=ExtResource("2_li0h4")]
 position = Vector2(492, 291)
 scale = Vector2(1.3, 1.3)
-texture = ExtResource("3_f2ea1")
 
-[node name="TextureRect" type="TextureRect" parent="Enemies/Enemy2"]
-show_behind_parent = true
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -136.5
-offset_top = -76.7692
-offset_right = 8.50003
-offset_bottom = -50.7692
-grow_horizontal = 2
-grow_vertical = 0
-texture = SubResource("GradientTexture2D_g88vo")
-expand_mode = 1
-
-[node name="Enemy3" type="Sprite2D" parent="Enemies"]
-modulate = Color(1, 0, 0, 1)
+[node name="Enemy3" parent="Enemies" instance=ExtResource("2_li0h4")]
 position = Vector2(751, 276)
 scale = Vector2(1.15, 1.15)
-texture = ExtResource("3_f2ea1")
-
-[node name="TextureRect" type="TextureRect" parent="Enemies/Enemy3"]
-show_behind_parent = true
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -136.5
-offset_top = -76.8696
-offset_right = 8.5
-offset_bottom = -50.8696
-grow_horizontal = 2
-grow_vertical = 0
-texture = SubResource("GradientTexture2D_g88vo")
-expand_mode = 1
 
 [node name="HSplitContainer" type="HSplitContainer" parent="."]
 offset_top = 447.0
