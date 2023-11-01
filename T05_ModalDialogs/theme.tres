@@ -39,6 +39,7 @@ BorderPanelContainer/styles/panel = SubResource("StyleBoxFlat_3ksf4")
 Button/colors/font_outline_color = Color(0, 0, 0, 1)
 Button/constants/outline_size = 8
 Button/styles/normal = SubResource("StyleBoxEmpty_36dpa")
+HBoxContainer/constants/separation = 20
 Label/colors/font_outline_color = Color(0, 0, 0, 1)
 Label/constants/outline_size = 8
 MarginContainer/constants/margin_bottom = 8

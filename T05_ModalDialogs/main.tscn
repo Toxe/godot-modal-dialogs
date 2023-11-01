@@ -1,9 +1,10 @@
-[gd_scene load_steps=11 format=3 uid="uid://cwc2cuyvyp0lc"]
+[gd_scene load_steps=12 format=3 uid="uid://cwc2cuyvyp0lc"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_axe23"]
 [ext_resource type="PackedScene" uid="uid://ccfdtanlj6x3i" path="res://enemy/enemy.tscn" id="2_li0h4"]
 [ext_resource type="PackedScene" uid="uid://jks85lh402mp" path="res://menu/menu.tscn" id="2_qe8vp"]
 [ext_resource type="Theme" uid="uid://biy1jtch5ko3f" path="res://theme.tres" id="3_3g1iq"]
+[ext_resource type="Texture2D" uid="uid://b1ygadlpkhabj" path="res://icon.svg" id="5_rkhbp"]
 
 [sub_resource type="Gradient" id="Gradient_8nihk"]
 colors = PackedColorArray(0.00492994, 0.228797, 1, 1, 0.51363, 0.670995, 1, 1)
@@ -232,7 +233,7 @@ offset_top = 447.0
 offset_right = 1024.0
 offset_bottom = 768.0
 theme = ExtResource("3_3g1iq")
-split_offset = 300
+split_offset = 400
 dragger_visibility = 1
 
 [node name="MainActionMenu" parent="HSplitContainer" instance=ExtResource("2_qe8vp")]
@@ -247,3 +248,65 @@ layout_mode = 2
 
 [node name="MarginContainer" type="MarginContainer" parent="HSplitContainer/PanelContainer/PanelContainer"]
 layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HSplitContainer/PanelContainer/PanelContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HSplitContainer/PanelContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="HSplitContainer/PanelContainer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+texture = ExtResource("5_rkhbp")
+expand_mode = 3
+
+[node name="Label" type="Label" parent="HSplitContainer/PanelContainer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Fighter"
+
+[node name="Label2" type="Label" parent="HSplitContainer/PanelContainer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "2745 / 3812"
+horizontal_alignment = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="HSplitContainer/PanelContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="HSplitContainer/PanelContainer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer2"]
+self_modulate = Color(1, 0.498039, 0.776471, 1)
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+texture = ExtResource("5_rkhbp")
+expand_mode = 3
+
+[node name="Label" type="Label" parent="HSplitContainer/PanelContainer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+text = "Mage"
+
+[node name="Label2" type="Label" parent="HSplitContainer/PanelContainer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "1428 / 1784"
+horizontal_alignment = 2
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="HSplitContainer/PanelContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="HSplitContainer/PanelContainer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer3"]
+self_modulate = Color(0, 0.933333, 0, 1)
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+texture = ExtResource("5_rkhbp")
+expand_mode = 3
+
+[node name="Label" type="Label" parent="HSplitContainer/PanelContainer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+text = "Cleric"
+
+[node name="Label2" type="Label" parent="HSplitContainer/PanelContainer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "1848 / 2518"
+horizontal_alignment = 2
