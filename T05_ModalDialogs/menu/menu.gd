@@ -21,20 +21,20 @@ func add_button(button: Button, text: String) -> Button:
     return button
 
 
-func get_controls() -> Array[Control]:
-    var controls: Array[Control] = []
+func get_buttons() -> Array[Button]:
+    var buttons: Array[Button] = []
     for child in %VBoxContainer.get_children():
-        var ctrl := child as Control
-        if ctrl:
-            controls.append(ctrl)
-    return controls
+        var button := child as Button
+        if button:
+            buttons.append(button)
+    return buttons
 
 
 func disable_mouse_input() -> void:
-    for control in get_controls():
-        control.mouse_filter = Control.MOUSE_FILTER_IGNORE
+    for button in get_buttons():
+        button.mouse_filter = Control.MOUSE_FILTER_IGNORE
 
 
 func enable_mouse_input() -> void:
-    for control in get_controls():
-        control.mouse_filter = Control.MOUSE_FILTER_STOP
+    for button in get_buttons():
+        button.mouse_filter = Control.MOUSE_FILTER_STOP
