@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=7 format=3 uid="uid://biy1jtch5ko3f"]
+[gd_resource type="Theme" load_steps=10 format=3 uid="uid://biy1jtch5ko3f"]
 
 [ext_resource type="FontFile" uid="uid://dllf0de64hrny" path="res://assets/fonts/cornelia-sans/cornelia-sans.ttf" id="1_at6w8"]
 
@@ -18,7 +18,14 @@ shadow_color = Color(0, 0, 0, 0.52549)
 shadow_size = 4
 shadow_offset = Vector2(8, 8)
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4tuww"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lkkwt"]
+bg_color = Color(1, 1, 1, 0.117647)
+
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_36dpa"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dno4u"]
 
 [sub_resource type="Gradient" id="Gradient_dyxfo"]
 colors = PackedColorArray(2.98411e-06, 0, 0.724565, 1, 0.102899, 0.340086, 1, 1)
@@ -37,8 +44,12 @@ default_font_size = 24
 BorderPanelContainer/base_type = &"PanelContainer"
 BorderPanelContainer/styles/panel = SubResource("StyleBoxFlat_3ksf4")
 Button/colors/font_outline_color = Color(0, 0, 0, 1)
+Button/colors/font_pressed_color = Color(1, 1, 0, 1)
 Button/constants/outline_size = 8
+Button/styles/focus = SubResource("StyleBoxEmpty_4tuww")
+Button/styles/hover = SubResource("StyleBoxFlat_lkkwt")
 Button/styles/normal = SubResource("StyleBoxEmpty_36dpa")
+Button/styles/pressed = SubResource("StyleBoxEmpty_dno4u")
 HBoxContainer/constants/separation = 20
 Label/colors/font_outline_color = Color(0, 0, 0, 1)
 Label/constants/outline_size = 8
@@ -47,3 +58,6 @@ MarginContainer/constants/margin_left = 8
 MarginContainer/constants/margin_right = 8
 MarginContainer/constants/margin_top = 8
 PanelContainer/styles/panel = SubResource("StyleBoxTexture_8vnty")
+SelectedMenuButton/base_type = &"Button"
+SelectedMenuButton/colors/font_color = Color(1, 1, 0, 1)
+SelectedMenuButton/colors/font_focus_color = Color(1, 1, 0, 1)
