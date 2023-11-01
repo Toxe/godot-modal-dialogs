@@ -12,6 +12,8 @@ func setup(build_menu_command: Callable) -> void:
 
 
 func close_dialog(dialog: Dialog) -> void:
+    theme_type_variation = ""
+
     dialog.close()
 
     var parent_menu := get_menu()
@@ -46,3 +48,5 @@ func _on_pressed() -> void:
 
     get_menu().disable_mouse_input()
     menu.close.connect(func() -> void: close_dialog(dialog))
+
+    theme_type_variation = "SelectedMenuButton"
