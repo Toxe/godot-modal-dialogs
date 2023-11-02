@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=10 format=3 uid="uid://biy1jtch5ko3f"]
+[gd_resource type="Theme" load_steps=9 format=3 uid="uid://biy1jtch5ko3f"]
 
 [ext_resource type="FontFile" uid="uid://dllf0de64hrny" path="res://assets/fonts/cornelia-sans/cornelia-sans.ttf" id="1_at6w8"]
 
@@ -17,8 +17,6 @@ corner_radius_bottom_left = 8
 shadow_color = Color(0, 0, 0, 0.52549)
 shadow_size = 4
 shadow_offset = Vector2(8, 8)
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4tuww"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lkkwt"]
 bg_color = Color(1, 1, 1, 0.117647)
@@ -46,7 +44,6 @@ BorderPanelContainer/styles/panel = SubResource("StyleBoxFlat_3ksf4")
 Button/colors/font_outline_color = Color(0, 0, 0, 1)
 Button/colors/font_pressed_color = Color(1, 1, 0, 1)
 Button/constants/outline_size = 8
-Button/styles/focus = SubResource("StyleBoxEmpty_4tuww")
 Button/styles/hover = SubResource("StyleBoxFlat_lkkwt")
 Button/styles/normal = SubResource("StyleBoxEmpty_36dpa")
 Button/styles/pressed = SubResource("StyleBoxEmpty_dno4u")
