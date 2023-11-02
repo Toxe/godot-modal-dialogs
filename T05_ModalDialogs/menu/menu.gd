@@ -3,6 +3,10 @@ class_name Menu extends PanelContainer
 signal request_close
 
 
+func _ready() -> void:
+    set_focus_to_first_button()
+
+
 func add_action(text: String, action: Callable) -> void:
     var button := add_button(ActionButton.new(), text) as ActionButton
     button.setup(action)
@@ -38,3 +42,10 @@ func disable_mouse_input() -> void:
 func enable_mouse_input() -> void:
     for button in get_buttons():
         button.mouse_filter = Control.MOUSE_FILTER_STOP
+
+
+func set_focus_to_first_button() -> void:
+    if not get_buttons().is_empty():
+        var button := get_buttons().front() as Button
+        if button:
+            button.grab_focus()

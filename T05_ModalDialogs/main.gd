@@ -2,7 +2,7 @@ extends Node2D
 
 const notification_scene = preload("res://notification.tscn")
 
-@onready var main_action_menu: Menu = $HSplitContainer/MainActionMenu
+@onready var main_action_menu := $HSplitContainer/MainActionMenu as Menu
 
 
 func _ready() -> void:
@@ -11,6 +11,7 @@ func _ready() -> void:
     main_action_menu.add_menu("Item", build_item_menu)
     main_action_menu.add_action("Guard", func() -> void: show_notification("guard"))
     main_action_menu.add_action("Flee", func() -> void: show_notification("flee"))
+    main_action_menu.set_focus_to_first_button()
 
 
 func build_attack_menu(menu: Menu) -> void:
