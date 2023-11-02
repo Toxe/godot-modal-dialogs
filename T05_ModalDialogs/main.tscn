@@ -201,20 +201,6 @@ offset_right = 1024.0
 offset_bottom = 447.0
 texture = SubResource("GradientTexture2D_asvv3")
 
-[node name="Ground2" type="ColorRect" parent="Background"]
-visible = false
-offset_top = 279.0
-offset_right = 1024.0
-offset_bottom = 447.0
-color = Color(0, 1, 0, 1)
-
-[node name="UI" type="ColorRect" parent="Background"]
-visible = false
-offset_top = 447.0
-offset_right = 1024.0
-offset_bottom = 768.0
-color = Color(0.00784314, 0, 0.992157, 1)
-
 [node name="Enemies" type="Node2D" parent="."]
 
 [node name="Enemy1" parent="Enemies" instance=ExtResource("2_li0h4")]
