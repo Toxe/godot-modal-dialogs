@@ -22,6 +22,17 @@ func add_button(button: Button, text: String) -> Button:
     button.text = text
     button.alignment = HORIZONTAL_ALIGNMENT_LEFT
     %VBoxContainer.add_child(button)
+
+    var button_count := get_buttons().size()
+    if button_count < 10:
+        var shortcut := Shortcut.new()
+        var event := InputEventAction.new()
+        event.action = "button%d" % button_count
+        shortcut.events.append(event)
+        button.shortcut = shortcut
+        button.shortcut_context = self
+        button.text = "%d: %s" % [button_count, button.text]
+
     return button
 
 
