@@ -43,7 +43,6 @@ offset_bottom = 279.0
 texture = SubResource("GradientTexture2D_0otgd")
 
 [node name="Cloud1" type="TextureRect" parent="Background/Sky"]
-layout_mode = 0
 offset_left = -32.0
 offset_top = -11.0
 offset_right = 103.0
@@ -52,7 +51,6 @@ texture = SubResource("GradientTexture2D_uvdbk")
 expand_mode = 1
 
 [node name="Cloud5" type="TextureRect" parent="Background/Sky"]
-layout_mode = 0
 offset_left = 328.0
 offset_top = 5.0
 offset_right = 463.0
@@ -61,7 +59,6 @@ texture = SubResource("GradientTexture2D_uvdbk")
 expand_mode = 1
 
 [node name="Cloud6" type="TextureRect" parent="Background/Sky"]
-layout_mode = 0
 offset_left = 399.0
 offset_top = -7.0
 offset_right = 534.0
@@ -70,7 +67,6 @@ texture = SubResource("GradientTexture2D_uvdbk")
 expand_mode = 1
 
 [node name="Cloud7" type="TextureRect" parent="Background/Sky"]
-layout_mode = 0
 offset_left = 397.0
 offset_top = 26.0
 offset_right = 532.0
@@ -79,7 +75,6 @@ texture = SubResource("GradientTexture2D_uvdbk")
 expand_mode = 1
 
 [node name="Cloud8" type="TextureRect" parent="Background/Sky"]
-layout_mode = 0
 offset_left = 469.0
 offset_top = 8.0
 offset_right = 604.0
@@ -87,8 +82,39 @@ offset_bottom = 72.0
 texture = SubResource("GradientTexture2D_uvdbk")
 expand_mode = 1
 
+[node name="Cloud17" type="TextureRect" parent="Background/Sky"]
+offset_left = 518.0
+offset_top = 135.0
+offset_right = 653.0
+offset_bottom = 199.0
+texture = SubResource("GradientTexture2D_uvdbk")
+expand_mode = 1
+
+[node name="Cloud18" type="TextureRect" parent="Background/Sky"]
+offset_left = 555.0
+offset_top = 122.0
+offset_right = 690.0
+offset_bottom = 186.0
+texture = SubResource("GradientTexture2D_uvdbk")
+expand_mode = 1
+
+[node name="Cloud19" type="TextureRect" parent="Background/Sky"]
+offset_left = 484.0
+offset_top = 105.0
+offset_right = 619.0
+offset_bottom = 169.0
+texture = SubResource("GradientTexture2D_uvdbk")
+expand_mode = 1
+
+[node name="Cloud20" type="TextureRect" parent="Background/Sky"]
+offset_left = 447.0
+offset_top = 132.0
+offset_right = 582.0
+offset_bottom = 196.0
+texture = SubResource("GradientTexture2D_uvdbk")
+expand_mode = 1
+
 [node name="Cloud16" type="TextureRect" parent="Background/Sky"]
-layout_mode = 0
 offset_left = 428.0
 offset_top = -25.0
 offset_right = 563.0
@@ -97,25 +123,22 @@ texture = SubResource("GradientTexture2D_uvdbk")
 expand_mode = 1
 
 [node name="Cloud9" type="TextureRect" parent="Background/Sky"]
-layout_mode = 0
-offset_left = 766.0
-offset_top = 105.0
-offset_right = 901.0
-offset_bottom = 169.0
+offset_left = 749.0
+offset_top = 106.0
+offset_right = 884.0
+offset_bottom = 170.0
 texture = SubResource("GradientTexture2D_uvdbk")
 expand_mode = 1
 
 [node name="Cloud10" type="TextureRect" parent="Background/Sky"]
-layout_mode = 0
-offset_left = 743.0
-offset_top = 120.0
-offset_right = 878.0
-offset_bottom = 184.0
+offset_left = 821.0
+offset_top = 118.0
+offset_right = 956.0
+offset_bottom = 182.0
 texture = SubResource("GradientTexture2D_uvdbk")
 expand_mode = 1
 
 [node name="Cloud11" type="TextureRect" parent="Background/Sky"]
-layout_mode = 0
 offset_left = 832.0
 offset_top = 93.0
 offset_right = 967.0
@@ -124,34 +147,30 @@ texture = SubResource("GradientTexture2D_uvdbk")
 expand_mode = 1
 
 [node name="Cloud12" type="TextureRect" parent="Background/Sky"]
-layout_mode = 0
-offset_left = 779.0
-offset_top = 80.0
-offset_right = 914.0
-offset_bottom = 144.0
+offset_left = 762.0
+offset_top = 70.0
+offset_right = 897.0
+offset_bottom = 134.0
 texture = SubResource("GradientTexture2D_uvdbk")
 expand_mode = 1
 
 [node name="Cloud13" type="TextureRect" parent="Background/Sky"]
-layout_mode = 0
-offset_left = 841.0
-offset_top = 58.0
-offset_right = 976.0
-offset_bottom = 122.0
+offset_left = 834.0
+offset_top = 56.0
+offset_right = 969.0
+offset_bottom = 120.0
 texture = SubResource("GradientTexture2D_uvdbk")
 expand_mode = 1
 
 [node name="Cloud14" type="TextureRect" parent="Background/Sky"]
-layout_mode = 0
-offset_left = 919.0
-offset_top = 78.0
-offset_right = 1054.0
-offset_bottom = 142.0
+offset_left = 911.0
+offset_top = 81.0
+offset_right = 1046.0
+offset_bottom = 145.0
 texture = SubResource("GradientTexture2D_uvdbk")
 expand_mode = 1
 
 [node name="Cloud15" type="TextureRect" parent="Background/Sky"]
-layout_mode = 0
 offset_left = 887.0
 offset_top = 41.0
 offset_right = 1022.0
@@ -160,7 +179,6 @@ texture = SubResource("GradientTexture2D_uvdbk")
 expand_mode = 1
 
 [node name="Cloud2" type="TextureRect" parent="Background/Sky"]
-layout_mode = 0
 offset_left = 6.0
 offset_top = 15.0
 offset_right = 141.0
@@ -169,7 +187,6 @@ texture = SubResource("GradientTexture2D_uvdbk")
 expand_mode = 1
 
 [node name="Cloud3" type="TextureRect" parent="Background/Sky"]
-layout_mode = 0
 offset_left = 56.0
 offset_top = -11.0
 offset_right = 191.0
@@ -178,22 +195,119 @@ texture = SubResource("GradientTexture2D_uvdbk")
 expand_mode = 1
 
 [node name="Cloud4" type="TextureRect" parent="Background/Sky"]
-layout_mode = 0
-offset_left = 88.0
+offset_left = 113.0
 offset_top = 10.0
-offset_right = 223.0
+offset_right = 248.0
 offset_bottom = 74.0
+texture = SubResource("GradientTexture2D_uvdbk")
+expand_mode = 1
+
+[node name="Cloud21" type="TextureRect" parent="Background/Sky"]
+offset_left = 40.0
+offset_top = 33.0
+offset_right = 215.0
+offset_bottom = 119.0
 texture = SubResource("GradientTexture2D_uvdbk")
 expand_mode = 1
 
 [node name="Mountains" type="Node2D" parent="Background"]
 y_sort_enabled = true
 
-[node name="Polygon2D" type="Polygon2D" parent="Background/Mountains"]
-position = Vector2(92, 179)
-scale = Vector2(2, 1)
-color = Color(0.737255, 0.737255, 0.737255, 1)
-polygon = PackedVector2Array(0, 0, 50, 100, -50, 100)
+[node name="Polygon2D1" type="Polygon2D" parent="Background/Mountains"]
+position = Vector2(38, 143)
+scale = Vector2(1.85, 0.906667)
+color = Color(0.7, 0.7, 0.7, 1)
+polygon = PackedVector2Array(0, 0, 70, 150, -70, 150)
+
+[node name="Polygon2D2" type="Polygon2D" parent="Background/Mountains"]
+position = Vector2(183, 164)
+scale = Vector2(1.84643, 0.84)
+color = Color(0.631373, 0.631373, 0.631373, 1)
+polygon = PackedVector2Array(0, 0, 70, 150, -70, 150)
+
+[node name="Polygon2D16" type="Polygon2D" parent="Background/Mountains"]
+position = Vector2(73, 217)
+scale = Vector2(2.3375, 0.553334)
+color = Color(0.564706, 0.564706, 0.564706, 1)
+polygon = PackedVector2Array(0, 0, 70, 150, -70, 150)
+
+[node name="Polygon2D3" type="Polygon2D" parent="Background/Mountains"]
+position = Vector2(149, 136)
+scale = Vector2(2.01429, 1.08667)
+color = Color(0.839216, 0.839216, 0.839216, 1)
+polygon = PackedVector2Array(0, 0, 70, 150, -2.66284, 150, -70, 150)
+
+[node name="Polygon2D5" type="Polygon2D" parent="Background/Mountains"]
+position = Vector2(785, 143)
+scale = Vector2(1.77143, 1.22)
+color = Color(0.901961, 0.901961, 0.901961, 1)
+polygon = PackedVector2Array(0, 0, 70, 150, -2.66284, 150, -70, 150)
+
+[node name="Polygon2D4" type="Polygon2D" parent="Background/Mountains"]
+position = Vector2(281.5, 160)
+scale = Vector2(2.03571, 0.826667)
+color = Color(0.758192, 0.758192, 0.758192, 1)
+polygon = PackedVector2Array(0, 0, 70, 150, -70, 150)
+
+[node name="Polygon2D6" type="Polygon2D" parent="Background/Mountains"]
+position = Vector2(458.75, 186)
+scale = Vector2(2.16786, 0.686667)
+color = Color(0.7, 0.7, 0.7, 1)
+polygon = PackedVector2Array(0, 0, 70, 150, -70, 150)
+
+[node name="Polygon2D10" type="Polygon2D" parent="Background/Mountains"]
+position = Vector2(391, 136)
+scale = Vector2(1.44643, 0.826667)
+color = Color(0.858824, 0.858824, 0.858824, 1)
+polygon = PackedVector2Array(0, 0, 70, 150, -70, 150)
+
+[node name="Polygon2D7" type="Polygon2D" parent="Background/Mountains"]
+position = Vector2(664, 178)
+scale = Vector2(2.03571, 0.826667)
+color = Color(0.756863, 0.756863, 0.756863, 1)
+polygon = PackedVector2Array(0, 0, 70, 150, -70, 150)
+
+[node name="Polygon2D11" type="Polygon2D" parent="Background/Mountains"]
+position = Vector2(538.813, 160)
+scale = Vector2(1.27411, 0.713333)
+color = Color(0.882353, 0.882353, 0.882353, 1)
+polygon = PackedVector2Array(0, 0, 70, 150, -70, 150)
+
+[node name="Polygon2D12" type="Polygon2D" parent="Background/Mountains"]
+position = Vector2(570.688, 161)
+scale = Vector2(1.23839, 0.593333)
+color = Color(0.807843, 0.807843, 0.807843, 1)
+polygon = PackedVector2Array(0, 0, 70, 150, -70, 150)
+
+[node name="Polygon2D8" type="Polygon2D" parent="Background/Mountains"]
+position = Vector2(964, 166)
+scale = Vector2(2.03571, 0.826667)
+color = Color(0.752941, 0.752941, 0.752941, 1)
+polygon = PackedVector2Array(0, 0, 70, 150, -70, 150)
+
+[node name="Polygon2D14" type="Polygon2D" parent="Background/Mountains"]
+position = Vector2(916, 152)
+scale = Vector2(1.46071, 0.746667)
+color = Color(0.823529, 0.823529, 0.823529, 1)
+polygon = PackedVector2Array(0, 0, 70, 150, -70, 150)
+
+[node name="Polygon2D9" type="Polygon2D" parent="Background/Mountains"]
+position = Vector2(755, 213)
+scale = Vector2(2.28214, 0.68)
+color = Color(0.6, 0.6, 0.6, 1)
+polygon = PackedVector2Array(0, 0, 70, 150, -70, 150)
+
+[node name="Polygon2D15" type="Polygon2D" parent="Background/Mountains"]
+position = Vector2(597.125, 219)
+scale = Vector2(2.50179, 0.593333)
+color = Color(0.580392, 0.580392, 0.580392, 1)
+polygon = PackedVector2Array(0, 0, 70, 150, -70, 150)
+
+[node name="Polygon2D13" type="Polygon2D" parent="Background/Mountains"]
+position = Vector2(857, 182)
+scale = Vector2(2.03571, 0.826667)
+color = Color(0.682353, 0.682353, 0.682353, 1)
+polygon = PackedVector2Array(0, 0, 70, 150, -70, 150)
 
 [node name="Ground" type="TextureRect" parent="Background"]
 offset_top = 279.0
