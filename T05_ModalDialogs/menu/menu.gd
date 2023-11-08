@@ -25,11 +25,10 @@ func add_button(button: Button, text: String) -> Button:
 
     var button_count := get_buttons().size()
     if button_count < 10:
-        var shortcut := Shortcut.new()
         var event := InputEventAction.new()
         event.action = "button%d" % button_count
-        shortcut.events.append(event)
-        button.shortcut = shortcut
+        button.shortcut = Shortcut.new()
+        button.shortcut.events.append(event)
         button.shortcut_context = self
         button.text = "%d: %s" % [button_count, button.text]
 
