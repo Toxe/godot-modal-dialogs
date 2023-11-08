@@ -64,5 +64,5 @@ func show_notification(text: String) -> void:
 
 func flee() -> void:
     show_notification("Your party escapes!")
-    await get_tree().create_timer(1.0).timeout
+    await get_tree().create_timer(1.5).timeout
     get_tree().quit()
