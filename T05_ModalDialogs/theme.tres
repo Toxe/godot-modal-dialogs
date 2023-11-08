@@ -58,3 +58,4 @@ PanelContainer/styles/panel = SubResource("StyleBoxTexture_8vnty")
 SelectedMenuButton/base_type = &"Button"
 SelectedMenuButton/colors/font_color = Color(1, 1, 0, 1)
 SelectedMenuButton/colors/font_focus_color = Color(1, 1, 0, 1)
+SelectedMenuButton/colors/font_hover_color = Color(1, 1, 0, 1)
