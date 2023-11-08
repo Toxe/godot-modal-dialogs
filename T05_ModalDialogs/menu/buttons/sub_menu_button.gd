@@ -1,52 +1,33 @@
 class_name SubMenuButton extends Button
 
-const dialog_scene = preload("res://dialog/dialog.tscn")
-const menu_scene = preload("res://menu/menu.tscn")
-
-var build_menu: Callable
+const menu_dialog_scene = preload("res://menu_dialog/menu_dialog.tscn")
 
 
-func setup(build_menu_command: Callable) -> void:
-    pressed.connect(_on_pressed)
-    build_menu = build_menu_command
+func setup(menu: Menu, build_sub_menu: Callable) -> void:
+    pressed.connect(func() -> void: _on_pressed(menu, build_sub_menu))
 
 
-func close_sub_dialog(dialog: Dialog) -> void:
-    theme_type_variation = ""
+func _on_pressed(menu: Menu, build_sub_menu: Callable) -> void:
+    # create sub-menu dialog
+    var menu_dialog := menu_dialog_scene.instantiate() as MenuDialog
+    menu_dialog.global_position = global_position + Vector2(size.x + 20, -30)
+    build_sub_menu.call(menu_dialog.get_menu())
 
-    dialog.close()
-
-    var parent_menu := get_menu()
-    if parent_menu:
-        parent_menu.enable_mouse_input()
-        parent_menu.request_close.emit()
-
-
-func get_menu() -> Menu:
-    return get_parent().get_parent().get_parent().get_parent() as Menu
-
-
-func _on_pressed() -> void:
-    # create menu
-    var menu := menu_scene.instantiate() as Menu
-    build_menu.call(menu)
-
-    # create dialog
-    var pos := global_position + Vector2(size.x + 20, -30)
-    var dialog := dialog_scene.instantiate() as Dialog
-    dialog.global_position = pos
-
-    dialog.add_content(menu)
-    get_viewport().add_child(dialog)
+    get_viewport().add_child(menu_dialog)
 
     # move dialog up if it clips out of the viewport
     var viewport_height: float = ProjectSettings.get("display/window/size/viewport_height")
-    var dialog_y_pos := (dialog.global_position + dialog.size).y
+    var dialog_y_pos := (menu_dialog.global_position + menu_dialog.size).y
 
     if dialog_y_pos > viewport_height:
-        dialog.global_position.y -= dialog_y_pos - viewport_height
-
-    get_menu().disable_mouse_input()
-    menu.request_close.connect(func() -> void: close_sub_dialog(dialog))
+        menu_dialog.global_position.y -= dialog_y_pos - viewport_height
 
     theme_type_variation = "SelectedMenuButton"
+    menu.disable_mouse_input()
+
+    menu_dialog.menu_dialog_closed.connect(func(_close_all_dialogs: bool) -> void:
+        theme_type_variation = ""
+        menu.enable_mouse_input()
+        grab_focus())
+
+    menu.sub_menu_dialog_opened.emit(menu_dialog)

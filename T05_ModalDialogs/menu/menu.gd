@@ -1,6 +1,7 @@
 class_name Menu extends PanelContainer
 
-signal request_close
+signal action_performed
+signal sub_menu_dialog_opened(menu_dialog: MenuDialog)
 
 
 func _ready() -> void:
@@ -9,13 +10,12 @@ func _ready() -> void:
 
 func add_action(text: String, action: Callable) -> void:
     var button := add_button(ActionButton.new(), text) as ActionButton
-    button.setup(action)
-    button.pressed.connect(func() -> void: request_close.emit())
+    button.setup(self, action)
 
 
 func add_menu(text: String, build_sub_menu: Callable) -> void:
     var button := add_button(SubMenuButton.new(), text) as SubMenuButton
-    button.setup(build_sub_menu)
+    button.setup(self, build_sub_menu)
 
 
 func add_button(button: Button, text: String) -> Button:
@@ -29,7 +29,6 @@ func add_button(button: Button, text: String) -> Button:
         event.action = "button%d" % button_count
         button.shortcut = Shortcut.new()
         button.shortcut.events.append(event)
-        button.shortcut_context = self
         button.text = "%d: %s" % [button_count, button.text]
 
     return button
