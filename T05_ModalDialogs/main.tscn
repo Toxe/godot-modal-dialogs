@@ -43,6 +43,7 @@ offset_bottom = 279.0
 texture = SubResource("GradientTexture2D_0otgd")
 
 [node name="Cloud1" type="TextureRect" parent="Background/Sky"]
+layout_mode = 0
 offset_left = -32.0
 offset_top = -11.0
 offset_right = 103.0
@@ -51,6 +52,7 @@ texture = SubResource("GradientTexture2D_uvdbk")
 expand_mode = 1
 
 [node name="Cloud5" type="TextureRect" parent="Background/Sky"]
+layout_mode = 0
 offset_left = 328.0
 offset_top = 5.0
 offset_right = 463.0
@@ -59,6 +61,7 @@ texture = SubResource("GradientTexture2D_uvdbk")
 expand_mode = 1
 
 [node name="Cloud6" type="TextureRect" parent="Background/Sky"]
+layout_mode = 0
 offset_left = 399.0
 offset_top = -7.0
 offset_right = 534.0
@@ -67,6 +70,7 @@ texture = SubResource("GradientTexture2D_uvdbk")
 expand_mode = 1
 
 [node name="Cloud7" type="TextureRect" parent="Background/Sky"]
+layout_mode = 0
 offset_left = 397.0
 offset_top = 26.0
 offset_right = 532.0
@@ -75,6 +79,7 @@ texture = SubResource("GradientTexture2D_uvdbk")
 expand_mode = 1
 
 [node name="Cloud8" type="TextureRect" parent="Background/Sky"]
+layout_mode = 0
 offset_left = 469.0
 offset_top = 8.0
 offset_right = 604.0
@@ -83,6 +88,7 @@ texture = SubResource("GradientTexture2D_uvdbk")
 expand_mode = 1
 
 [node name="Cloud17" type="TextureRect" parent="Background/Sky"]
+layout_mode = 0
 offset_left = 518.0
 offset_top = 135.0
 offset_right = 653.0
@@ -91,6 +97,7 @@ texture = SubResource("GradientTexture2D_uvdbk")
 expand_mode = 1
 
 [node name="Cloud18" type="TextureRect" parent="Background/Sky"]
+layout_mode = 0
 offset_left = 555.0
 offset_top = 122.0
 offset_right = 690.0
@@ -99,6 +106,7 @@ texture = SubResource("GradientTexture2D_uvdbk")
 expand_mode = 1
 
 [node name="Cloud19" type="TextureRect" parent="Background/Sky"]
+layout_mode = 0
 offset_left = 484.0
 offset_top = 105.0
 offset_right = 619.0
@@ -107,6 +115,7 @@ texture = SubResource("GradientTexture2D_uvdbk")
 expand_mode = 1
 
 [node name="Cloud20" type="TextureRect" parent="Background/Sky"]
+layout_mode = 0
 offset_left = 447.0
 offset_top = 132.0
 offset_right = 582.0
@@ -115,6 +124,7 @@ texture = SubResource("GradientTexture2D_uvdbk")
 expand_mode = 1
 
 [node name="Cloud16" type="TextureRect" parent="Background/Sky"]
+layout_mode = 0
 offset_left = 428.0
 offset_top = -25.0
 offset_right = 563.0
@@ -123,6 +133,7 @@ texture = SubResource("GradientTexture2D_uvdbk")
 expand_mode = 1
 
 [node name="Cloud9" type="TextureRect" parent="Background/Sky"]
+layout_mode = 0
 offset_left = 749.0
 offset_top = 106.0
 offset_right = 884.0
@@ -131,6 +142,7 @@ texture = SubResource("GradientTexture2D_uvdbk")
 expand_mode = 1
 
 [node name="Cloud10" type="TextureRect" parent="Background/Sky"]
+layout_mode = 0
 offset_left = 821.0
 offset_top = 118.0
 offset_right = 956.0
@@ -139,6 +151,7 @@ texture = SubResource("GradientTexture2D_uvdbk")
 expand_mode = 1
 
 [node name="Cloud11" type="TextureRect" parent="Background/Sky"]
+layout_mode = 0
 offset_left = 832.0
 offset_top = 93.0
 offset_right = 967.0
@@ -147,6 +160,7 @@ texture = SubResource("GradientTexture2D_uvdbk")
 expand_mode = 1
 
 [node name="Cloud12" type="TextureRect" parent="Background/Sky"]
+layout_mode = 0
 offset_left = 762.0
 offset_top = 70.0
 offset_right = 897.0
@@ -155,6 +169,7 @@ texture = SubResource("GradientTexture2D_uvdbk")
 expand_mode = 1
 
 [node name="Cloud13" type="TextureRect" parent="Background/Sky"]
+layout_mode = 0
 offset_left = 834.0
 offset_top = 56.0
 offset_right = 969.0
@@ -163,6 +178,7 @@ texture = SubResource("GradientTexture2D_uvdbk")
 expand_mode = 1
 
 [node name="Cloud14" type="TextureRect" parent="Background/Sky"]
+layout_mode = 0
 offset_left = 911.0
 offset_top = 81.0
 offset_right = 1046.0
@@ -171,6 +187,7 @@ texture = SubResource("GradientTexture2D_uvdbk")
 expand_mode = 1
 
 [node name="Cloud15" type="TextureRect" parent="Background/Sky"]
+layout_mode = 0
 offset_left = 887.0
 offset_top = 41.0
 offset_right = 1022.0
@@ -179,6 +196,7 @@ texture = SubResource("GradientTexture2D_uvdbk")
 expand_mode = 1
 
 [node name="Cloud2" type="TextureRect" parent="Background/Sky"]
+layout_mode = 0
 offset_left = 6.0
 offset_top = 15.0
 offset_right = 141.0
@@ -187,6 +205,7 @@ texture = SubResource("GradientTexture2D_uvdbk")
 expand_mode = 1
 
 [node name="Cloud3" type="TextureRect" parent="Background/Sky"]
+layout_mode = 0
 offset_left = 56.0
 offset_top = -11.0
 offset_right = 191.0
@@ -195,6 +214,7 @@ texture = SubResource("GradientTexture2D_uvdbk")
 expand_mode = 1
 
 [node name="Cloud4" type="TextureRect" parent="Background/Sky"]
+layout_mode = 0
 offset_left = 113.0
 offset_top = 10.0
 offset_right = 248.0
@@ -203,6 +223,7 @@ texture = SubResource("GradientTexture2D_uvdbk")
 expand_mode = 1
 
 [node name="Cloud21" type="TextureRect" parent="Background/Sky"]
+layout_mode = 0
 offset_left = 40.0
 offset_top = 33.0
 offset_right = 215.0
