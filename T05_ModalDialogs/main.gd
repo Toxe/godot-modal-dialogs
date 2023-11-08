@@ -10,7 +10,7 @@ func _ready() -> void:
     main_action_menu.add_menu("Magic", build_magic_menu)
     main_action_menu.add_menu("Item", build_item_menu)
     main_action_menu.add_action("Guard", func() -> void: show_notification("guard"))
-    main_action_menu.add_action("Flee", func() -> void: show_notification("flee"))
+    main_action_menu.add_action("Flee", flee)
     main_action_menu.set_focus_to_first_button()
 
 
@@ -60,3 +60,9 @@ func show_notification(text: String) -> void:
     var popup := notification_scene.instantiate()
     popup.set_text(text)
     add_child(popup)
+
+
+func flee() -> void:
+    show_notification("Your party escapes!")
+    await get_tree().create_timer(1.0).timeout
+    get_tree().quit()
