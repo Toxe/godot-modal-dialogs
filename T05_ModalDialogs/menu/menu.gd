@@ -29,6 +29,7 @@ func add_button(button: Button, text: String) -> Button:
         event.action = "button%d" % button_count
         button.shortcut = Shortcut.new()
         button.shortcut.events.append(event)
+        button.shortcut_context = self
         button.text = "%d: %s" % [button_count, button.text]
 
     return button
