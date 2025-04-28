@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://bf0d6qcy1tkm1"]
 
-[ext_resource type="Script" path="res://notification.gd" id="1_yyqnp"]
+[ext_resource type="Script" uid="uid://comtj7u7xenak" path="res://notification.gd" id="1_yyqnp"]
 [ext_resource type="Theme" uid="uid://biy1jtch5ko3f" path="res://theme.tres" id="2_k36uu"]
 
 [node name="Notification" type="CanvasLayer"]
