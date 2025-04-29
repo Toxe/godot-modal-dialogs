@@ -55,7 +55,7 @@ func build_item_phoenix_down_menu(menu: Menu) -> void:
 
 
 func show_notification(text: String) -> void:
-    var popup := notification_scene.instantiate()
+    var popup := notification_scene.instantiate() as Notification
     popup.set_text(text)
     add_child(popup)
 

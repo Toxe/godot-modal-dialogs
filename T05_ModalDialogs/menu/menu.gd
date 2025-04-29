@@ -56,6 +56,6 @@ func enable_mouse_input() -> void:
 
 func set_focus_to_first_button() -> void:
     if not get_buttons().is_empty():
-        var button := get_buttons().front() as Button
+        var button: Button = get_buttons().front()
         if button:
             button.grab_focus()

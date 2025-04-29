@@ -10,4 +10,4 @@ func _ready() -> void:
 
 
 func set_text(text: String) -> void:
-    %Label.text = text
+    (%Label as Label).text = text
